@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- charset -->
+         <meta charset="UTF-8">
+
+        <!-- title -->
+         <title>{% block title %}{% endblock %}</title>
+
+        <!-- favicon -->
+         <link rel="icon" href="{% static 'core/img/favicon.ico' %}">
+
+        <!-- style -->
+         <link rel="stylesheet" href="{% static 'core/css/base.css' %}">
+         <link rel="stylesheet" href="{% static 'core/css/header.css' %}">
+         <link rel="stylesheet" href="{% static 'core/css/footer.css' %}">
+         {% block css %}{% endblock %}
+    </head>
+    <body>
+        <!-- header -->
+         {% include 'header.html' %}
+
+        <!-- main -->
+         {% block content %}{% endblock %}
+
+        <!-- footer -->
+         {% include 'footer.html' %}
+
+        <!-- javascript -->
+         <script src="{% static 'core/js/base.js' %}"></script>
+         <script src="{% static 'core/js/header.js' %}"></script>
+         <script src="{% static 'core/js/footer.js' %}"></script>
+         {% block js %}{% endblock %}
+    </body>
+</html>
