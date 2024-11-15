@@ -1,6 +1,14 @@
 @charset "UTF-8";
 
-body {
+#footer {
     padding: 0;
-    margin: 0;
+    margin: 5vh auto 0 auto;
+    width: 70vw;
+}
+
+#footer-copyright {
+    display: block;
+    color: gray;
+    text-align: center;
+    align-items: center;
 }
