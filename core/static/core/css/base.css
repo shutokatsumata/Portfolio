@@ -11,7 +11,7 @@ body {
     margin: 0 auto 0 auto;
     width: 50vw;
     color: #FFFFFF;
-    background-color: #000000; /* 開発用 */
+    /* background-color: #000000; */
 }
 
 .page-title {
