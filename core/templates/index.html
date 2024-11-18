@@ -1,13 +1,10 @@
 {% extends 'base.html' %}
-
 {% load static %}
-
-{% block title %}{% endblock %}
-
+{% block title %}ホーム{% endblock %}
 {% block css %}<link rel="stylesheet" href="{% static 'core/css/index.css' %}">{% endblock %}
 
     {% block content %}
-    <div id="main-wrapper">
-        <h2>Welcome!</h2>
+    <div id="index">
+        <h2 class="page-title">Welcome!</h2>
     </div>
     {% endblock %}

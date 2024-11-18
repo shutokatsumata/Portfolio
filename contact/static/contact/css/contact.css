@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+#contact {
+    padding: 0;
+    margin: 0;
+}
+
+#contact-form-wrapper {
+    margin: 5vh 0 1vh 1vw;
+}
