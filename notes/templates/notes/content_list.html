@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}備忘録 - 本文一覧{% endblock %}
+
+{% block content %}
+<div id="content_list">
+    <h2 class="page-title">備忘録</h2>
+    <h4>{{ genre.name }}>{{ category.name }}の本文一覧</h4>
+    <ul>
+        {% for content in contents %}
+            <li><a href="{% url 'content_detail' genre.name category.name content.id %}">{{ content.name }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

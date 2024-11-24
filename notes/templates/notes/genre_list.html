@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}備忘録 - ジャンル一覧{% endblock %}
+
+{% block content %}
+<div id="genre_list">
+    <h2 class="page-title">備忘録</h2>
+    <h4>ジャンル一覧</h4>
+    <ul>
+        {% for genre in genres %}
+            <li><a href="{% url 'category_list' genre.name %}">{{ genre.name }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
